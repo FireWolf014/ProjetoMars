@@ -20,6 +20,7 @@ namespace ProjetoMars
         private Boolean showpanelEstoqueCustos = false;
         private Boolean showpanelFaturamento = false;
         private Boolean showpanelLivrosFiscais = false;
+        private Boolean showpanelOrcamento = false;
 
         private void tooglePanels()
         {
@@ -139,6 +140,53 @@ namespace ProjetoMars
         }
 
         private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnOrcamento_Click(object sender, EventArgs e)
+        {
+                     
+            
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnClient_Click(object sender, EventArgs e)
+        {
+           
+
+        }
+
+        private void btnAprocaoComercial_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void btnRelatorioVendas_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void domainUpDown1_SelectedItemChanged(object sender, EventArgs e)
         {
 
         }
