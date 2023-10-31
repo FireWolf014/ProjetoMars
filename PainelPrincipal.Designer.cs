@@ -30,9 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PainelPrincipal));
             this.panel2 = new System.Windows.Forms.Panel();
-            this.labelMenu = new System.Windows.Forms.Label();
+            this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
             this.panelCallCenter = new System.Windows.Forms.Panel();
-            this.button5 = new System.Windows.Forms.Button();
             this.btnRelatorioVendas = new System.Windows.Forms.Button();
             this.btnAprocaoComercial = new System.Windows.Forms.Button();
             this.btnClient = new System.Windows.Forms.Button();
@@ -51,38 +50,35 @@
             this.panelOutros = new System.Windows.Forms.Panel();
             this.Outros = new System.Windows.Forms.Label();
             this.panel11 = new System.Windows.Forms.Panel();
-            this.labelEmailUser = new System.Windows.Forms.Label();
+            this.btnSaindo = new System.Windows.Forms.Button();
+            this.lblEmail = new System.Windows.Forms.Label();
             this.labelEmail = new System.Windows.Forms.Label();
-            this.labelUsername = new System.Windows.Forms.Label();
-            this.panelPrincipal = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lblUsuario = new System.Windows.Forms.Label();
             this.pictureBoxUser = new System.Windows.Forms.PictureBox();
+            this.panelPrincipal = new System.Windows.Forms.Panel();
             this.btnConfiguracao = new System.Windows.Forms.Button();
             this.btnNotificacao = new System.Windows.Forms.Button();
             this.btnLivrosFiscal = new System.Windows.Forms.Button();
             this.btnFaturamento = new System.Windows.Forms.Button();
             this.btnEstoqueCusto = new System.Windows.Forms.Button();
             this.btnCallCenter = new System.Windows.Forms.Button();
-            this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
+            this.panelHome = new System.Windows.Forms.Panel();
+            this.btnHome = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
             this.panelCallCenter.SuspendLayout();
             this.panelEstoqueCustos.SuspendLayout();
             this.panelFaturamento.SuspendLayout();
             this.panelLivrosFiscais.SuspendLayout();
             this.panelOutros.SuspendLayout();
             this.panel11.SuspendLayout();
-            this.panelPrincipal.SuspendLayout();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUser)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
+            this.panelPrincipal.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.labelMenu);
+            this.panel2.Controls.Add(this.btnHome);
             this.panel2.Controls.Add(this.pictureBoxLogo);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.ForeColor = System.Drawing.Color.White;
@@ -91,21 +87,20 @@
             this.panel2.Size = new System.Drawing.Size(192, 128);
             this.panel2.TabIndex = 2;
             // 
-            // labelMenu
+            // pictureBoxLogo
             // 
-            this.labelMenu.AutoSize = true;
-            this.labelMenu.BackColor = System.Drawing.Color.Transparent;
-            this.labelMenu.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelMenu.Location = new System.Drawing.Point(2, 97);
-            this.labelMenu.Name = "labelMenu";
-            this.labelMenu.Size = new System.Drawing.Size(62, 28);
-            this.labelMenu.TabIndex = 1;
-            this.labelMenu.Text = "Menu";
+            this.pictureBoxLogo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pictureBoxLogo.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxLogo.Image")));
+            this.pictureBoxLogo.Location = new System.Drawing.Point(0, 0);
+            this.pictureBoxLogo.Name = "pictureBoxLogo";
+            this.pictureBoxLogo.Size = new System.Drawing.Size(192, 94);
+            this.pictureBoxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxLogo.TabIndex = 1;
+            this.pictureBoxLogo.TabStop = false;
             // 
             // panelCallCenter
             // 
             this.panelCallCenter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(109)))), ((int)(((byte)(150)))));
-            this.panelCallCenter.Controls.Add(this.button5);
             this.panelCallCenter.Controls.Add(this.btnRelatorioVendas);
             this.panelCallCenter.Controls.Add(this.btnAprocaoComercial);
             this.panelCallCenter.Controls.Add(this.btnClient);
@@ -113,30 +108,9 @@
             this.panelCallCenter.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelCallCenter.Location = new System.Drawing.Point(0, 160);
             this.panelCallCenter.Name = "panelCallCenter";
-            this.panelCallCenter.Size = new System.Drawing.Size(192, 182);
+            this.panelCallCenter.Size = new System.Drawing.Size(192, 127);
             this.panelCallCenter.TabIndex = 1;
             this.panelCallCenter.Paint += new System.Windows.Forms.PaintEventHandler(this.panelCallCenter_Paint);
-            // 
-            // button5
-            // 
-            this.button5.BackColor = System.Drawing.Color.Transparent;
-            this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button5.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(144)))), ((int)(((byte)(150)))));
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(152)))), ((int)(((byte)(255)))));
-            this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(162)))), ((int)(((byte)(212)))));
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.Location = new System.Drawing.Point(0, 128);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(192, 32);
-            this.button5.TabIndex = 6;
-            this.button5.Text = "Relatorio Vendedores";
-            this.button5.UseVisualStyleBackColor = false;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // btnRelatorioVendas
             // 
@@ -230,9 +204,9 @@
             this.panelEstoqueCustos.Controls.Add(this.btnCompras);
             this.panelEstoqueCustos.Controls.Add(this.btnProdutos);
             this.panelEstoqueCustos.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelEstoqueCustos.Location = new System.Drawing.Point(0, 374);
+            this.panelEstoqueCustos.Location = new System.Drawing.Point(0, 319);
             this.panelEstoqueCustos.Name = "panelEstoqueCustos";
-            this.panelEstoqueCustos.Size = new System.Drawing.Size(192, 142);
+            this.panelEstoqueCustos.Size = new System.Drawing.Size(192, 126);
             this.panelEstoqueCustos.TabIndex = 2;
             // 
             // btnRelatorioCompras
@@ -322,9 +296,9 @@
             this.panelFaturamento.Controls.Add(this.btnNfeE);
             this.panelFaturamento.Controls.Add(this.btnAprovaCredito);
             this.panelFaturamento.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelFaturamento.Location = new System.Drawing.Point(0, 548);
+            this.panelFaturamento.Location = new System.Drawing.Point(0, 477);
             this.panelFaturamento.Name = "panelFaturamento";
-            this.panelFaturamento.Size = new System.Drawing.Size(192, 108);
+            this.panelFaturamento.Size = new System.Drawing.Size(192, 102);
             this.panelFaturamento.TabIndex = 5;
             // 
             // btnNfeSefaz
@@ -392,7 +366,7 @@
             this.panelLivrosFiscais.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(109)))), ((int)(((byte)(150)))));
             this.panelLivrosFiscais.Controls.Add(this.btnCadastroTes);
             this.panelLivrosFiscais.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelLivrosFiscais.Location = new System.Drawing.Point(0, 688);
+            this.panelLivrosFiscais.Location = new System.Drawing.Point(0, 611);
             this.panelLivrosFiscais.Name = "panelLivrosFiscais";
             this.panelLivrosFiscais.Size = new System.Drawing.Size(192, 42);
             this.panelLivrosFiscais.TabIndex = 7;
@@ -421,7 +395,7 @@
             // 
             this.panelOutros.Controls.Add(this.Outros);
             this.panelOutros.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelOutros.Location = new System.Drawing.Point(0, 730);
+            this.panelOutros.Location = new System.Drawing.Point(0, 653);
             this.panelOutros.Name = "panelOutros";
             this.panelOutros.Size = new System.Drawing.Size(192, 29);
             this.panelOutros.TabIndex = 12;
@@ -440,27 +414,44 @@
             // 
             // panel11
             // 
-            this.panel11.Controls.Add(this.labelEmailUser);
+            this.panel11.Controls.Add(this.btnSaindo);
+            this.panel11.Controls.Add(this.lblEmail);
             this.panel11.Controls.Add(this.labelEmail);
-            this.panel11.Controls.Add(this.labelUsername);
+            this.panel11.Controls.Add(this.lblUsuario);
             this.panel11.Controls.Add(this.pictureBoxUser);
             this.panel11.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel11.Location = new System.Drawing.Point(0, 827);
+            this.panel11.Location = new System.Drawing.Point(0, 750);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(192, 83);
+            this.panel11.Size = new System.Drawing.Size(192, 68);
             this.panel11.TabIndex = 1;
+            this.panel11.Paint += new System.Windows.Forms.PaintEventHandler(this.panel11_Paint);
             // 
-            // labelEmailUser
+            // btnSaindo
             // 
-            this.labelEmailUser.AutoSize = true;
-            this.labelEmailUser.BackColor = System.Drawing.Color.Transparent;
-            this.labelEmailUser.Font = new System.Drawing.Font("Segoe UI Black", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelEmailUser.ForeColor = System.Drawing.Color.White;
-            this.labelEmailUser.Location = new System.Drawing.Point(49, 56);
-            this.labelEmailUser.Name = "labelEmailUser";
-            this.labelEmailUser.Size = new System.Drawing.Size(141, 15);
-            this.labelEmailUser.TabIndex = 3;
-            this.labelEmailUser.Text = "Usuario@teste.com.br";
+            this.btnSaindo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSaindo.FlatAppearance.BorderSize = 0;
+            this.btnSaindo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSaindo.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSaindo.ForeColor = System.Drawing.Color.White;
+            this.btnSaindo.Location = new System.Drawing.Point(55, 24);
+            this.btnSaindo.Name = "btnSaindo";
+            this.btnSaindo.Size = new System.Drawing.Size(44, 21);
+            this.btnSaindo.TabIndex = 0;
+            this.btnSaindo.Text = "Sair";
+            this.btnSaindo.UseVisualStyleBackColor = true;
+            this.btnSaindo.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // lblEmail
+            // 
+            this.lblEmail.AutoSize = true;
+            this.lblEmail.BackColor = System.Drawing.Color.Transparent;
+            this.lblEmail.Font = new System.Drawing.Font("Segoe UI Black", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEmail.ForeColor = System.Drawing.Color.White;
+            this.lblEmail.Location = new System.Drawing.Point(48, 46);
+            this.lblEmail.Name = "lblEmail";
+            this.lblEmail.Size = new System.Drawing.Size(51, 15);
+            this.lblEmail.TabIndex = 3;
+            this.lblEmail.Text = "@email";
             // 
             // labelEmail
             // 
@@ -468,23 +459,34 @@
             this.labelEmail.BackColor = System.Drawing.Color.Transparent;
             this.labelEmail.Font = new System.Drawing.Font("Segoe UI Black", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelEmail.ForeColor = System.Drawing.Color.White;
-            this.labelEmail.Location = new System.Drawing.Point(4, 56);
+            this.labelEmail.Location = new System.Drawing.Point(3, 46);
             this.labelEmail.Name = "labelEmail";
             this.labelEmail.Size = new System.Drawing.Size(44, 15);
             this.labelEmail.TabIndex = 2;
             this.labelEmail.Text = "Email:";
             // 
-            // labelUsername
+            // lblUsuario
             // 
-            this.labelUsername.AutoSize = true;
-            this.labelUsername.BackColor = System.Drawing.Color.Transparent;
-            this.labelUsername.Font = new System.Drawing.Font("Segoe UI Black", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelUsername.ForeColor = System.Drawing.Color.White;
-            this.labelUsername.Location = new System.Drawing.Point(61, 23);
-            this.labelUsername.Name = "labelUsername";
-            this.labelUsername.Size = new System.Drawing.Size(112, 15);
-            this.labelUsername.TabIndex = 1;
-            this.labelUsername.Text = "Nome do Usuario";
+            this.lblUsuario.AutoSize = true;
+            this.lblUsuario.BackColor = System.Drawing.Color.Transparent;
+            this.lblUsuario.Font = new System.Drawing.Font("Segoe UI Black", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUsuario.ForeColor = System.Drawing.Color.White;
+            this.lblUsuario.Location = new System.Drawing.Point(52, 6);
+            this.lblUsuario.Name = "lblUsuario";
+            this.lblUsuario.Size = new System.Drawing.Size(54, 15);
+            this.lblUsuario.TabIndex = 1;
+            this.lblUsuario.Text = "Usuario";
+            this.lblUsuario.Click += new System.EventHandler(this.labelUsername_Click);
+            // 
+            // pictureBoxUser
+            // 
+            this.pictureBoxUser.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxUser.Image")));
+            this.pictureBoxUser.Location = new System.Drawing.Point(0, 3);
+            this.pictureBoxUser.Name = "pictureBoxUser";
+            this.pictureBoxUser.Size = new System.Drawing.Size(46, 40);
+            this.pictureBoxUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBoxUser.TabIndex = 1;
+            this.pictureBoxUser.TabStop = false;
             // 
             // panelPrincipal
             // 
@@ -506,52 +508,8 @@
             this.panelPrincipal.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelPrincipal.Location = new System.Drawing.Point(0, 0);
             this.panelPrincipal.Name = "panelPrincipal";
-            this.panelPrincipal.Size = new System.Drawing.Size(209, 881);
+            this.panelPrincipal.Size = new System.Drawing.Size(209, 668);
             this.panelPrincipal.TabIndex = 0;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.SystemColors.Window;
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(209, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1001, 881);
-            this.panel1.TabIndex = 1;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label1.Font = new System.Drawing.Font("Segoe UI Black", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(109)))), ((int)(((byte)(150)))));
-            this.label1.Location = new System.Drawing.Point(129, 57);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(678, 37);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Seja Bem-Vindo ao CRM Zapex Sistema de vendas";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(60, 137);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(826, 343);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBoxUser
-            // 
-            this.pictureBoxUser.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxUser.Image")));
-            this.pictureBoxUser.Location = new System.Drawing.Point(0, 3);
-            this.pictureBoxUser.Name = "pictureBoxUser";
-            this.pictureBoxUser.Size = new System.Drawing.Size(55, 50);
-            this.pictureBoxUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBoxUser.TabIndex = 1;
-            this.pictureBoxUser.TabStop = false;
             // 
             // btnConfiguracao
             // 
@@ -567,7 +525,7 @@
             this.btnConfiguracao.ForeColor = System.Drawing.Color.White;
             this.btnConfiguracao.Image = ((System.Drawing.Image)(resources.GetObject("btnConfiguracao.Image")));
             this.btnConfiguracao.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnConfiguracao.Location = new System.Drawing.Point(0, 795);
+            this.btnConfiguracao.Location = new System.Drawing.Point(0, 718);
             this.btnConfiguracao.Name = "btnConfiguracao";
             this.btnConfiguracao.Size = new System.Drawing.Size(192, 32);
             this.btnConfiguracao.TabIndex = 15;
@@ -589,7 +547,7 @@
             this.btnNotificacao.ForeColor = System.Drawing.Color.White;
             this.btnNotificacao.Image = ((System.Drawing.Image)(resources.GetObject("btnNotificacao.Image")));
             this.btnNotificacao.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnNotificacao.Location = new System.Drawing.Point(0, 759);
+            this.btnNotificacao.Location = new System.Drawing.Point(0, 682);
             this.btnNotificacao.Name = "btnNotificacao";
             this.btnNotificacao.Size = new System.Drawing.Size(192, 36);
             this.btnNotificacao.TabIndex = 13;
@@ -611,7 +569,7 @@
             this.btnLivrosFiscal.ForeColor = System.Drawing.Color.White;
             this.btnLivrosFiscal.Image = ((System.Drawing.Image)(resources.GetObject("btnLivrosFiscal.Image")));
             this.btnLivrosFiscal.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLivrosFiscal.Location = new System.Drawing.Point(0, 656);
+            this.btnLivrosFiscal.Location = new System.Drawing.Point(0, 579);
             this.btnLivrosFiscal.Name = "btnLivrosFiscal";
             this.btnLivrosFiscal.Size = new System.Drawing.Size(192, 32);
             this.btnLivrosFiscal.TabIndex = 6;
@@ -633,7 +591,7 @@
             this.btnFaturamento.ForeColor = System.Drawing.Color.White;
             this.btnFaturamento.Image = ((System.Drawing.Image)(resources.GetObject("btnFaturamento.Image")));
             this.btnFaturamento.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnFaturamento.Location = new System.Drawing.Point(0, 516);
+            this.btnFaturamento.Location = new System.Drawing.Point(0, 445);
             this.btnFaturamento.Name = "btnFaturamento";
             this.btnFaturamento.Size = new System.Drawing.Size(192, 32);
             this.btnFaturamento.TabIndex = 4;
@@ -655,7 +613,7 @@
             this.btnEstoqueCusto.ForeColor = System.Drawing.Color.White;
             this.btnEstoqueCusto.Image = ((System.Drawing.Image)(resources.GetObject("btnEstoqueCusto.Image")));
             this.btnEstoqueCusto.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEstoqueCusto.Location = new System.Drawing.Point(0, 342);
+            this.btnEstoqueCusto.Location = new System.Drawing.Point(0, 287);
             this.btnEstoqueCusto.Name = "btnEstoqueCusto";
             this.btnEstoqueCusto.Size = new System.Drawing.Size(192, 32);
             this.btnEstoqueCusto.TabIndex = 3;
@@ -685,23 +643,41 @@
             this.btnCallCenter.UseVisualStyleBackColor = false;
             this.btnCallCenter.Click += new System.EventHandler(this.btnCallCenter_Click);
             // 
-            // pictureBoxLogo
+            // panelHome
             // 
-            this.pictureBoxLogo.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxLogo.Image")));
-            this.pictureBoxLogo.Location = new System.Drawing.Point(0, 0);
-            this.pictureBoxLogo.Name = "pictureBoxLogo";
-            this.pictureBoxLogo.Size = new System.Drawing.Size(209, 94);
-            this.pictureBoxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxLogo.TabIndex = 1;
-            this.pictureBoxLogo.TabStop = false;
+            this.panelHome.BackColor = System.Drawing.Color.Transparent;
+            this.panelHome.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelHome.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panelHome.ForeColor = System.Drawing.Color.White;
+            this.panelHome.Location = new System.Drawing.Point(209, 0);
+            this.panelHome.Name = "panelHome";
+            this.panelHome.Size = new System.Drawing.Size(1099, 668);
+            this.panelHome.TabIndex = 1;
+            // 
+            // btnHome
+            // 
+            this.btnHome.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnHome.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnHome.FlatAppearance.BorderSize = 0;
+            this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHome.Font = new System.Drawing.Font("Segoe UI Black", 9.75F);
+            this.btnHome.Image = ((System.Drawing.Image)(resources.GetObject("btnHome.Image")));
+            this.btnHome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHome.Location = new System.Drawing.Point(0, 94);
+            this.btnHome.Name = "btnHome";
+            this.btnHome.Size = new System.Drawing.Size(192, 31);
+            this.btnHome.TabIndex = 2;
+            this.btnHome.Text = "Dasboard";
+            this.btnHome.UseVisualStyleBackColor = true;
+            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
             // PainelPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Menu;
-            this.ClientSize = new System.Drawing.Size(1210, 881);
-            this.Controls.Add(this.panel1);
+            this.ClientSize = new System.Drawing.Size(1308, 668);
+            this.Controls.Add(this.panelHome);
             this.Controls.Add(this.panelPrincipal);
             this.Cursor = System.Windows.Forms.Cursors.Default;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -710,7 +686,7 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.PainelPrincipal_Load);
             this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
             this.panelCallCenter.ResumeLayout(false);
             this.panelEstoqueCustos.ResumeLayout(false);
             this.panelFaturamento.ResumeLayout(false);
@@ -719,12 +695,8 @@
             this.panelOutros.PerformLayout();
             this.panel11.ResumeLayout(false);
             this.panel11.PerformLayout();
-            this.panelPrincipal.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUser)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
+            this.panelPrincipal.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -732,11 +704,9 @@
         #endregion
 
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label labelMenu;
         private System.Windows.Forms.PictureBox pictureBoxLogo;
         private System.Windows.Forms.Button btnCallCenter;
         private System.Windows.Forms.Panel panelCallCenter;
-        private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button btnRelatorioVendas;
         private System.Windows.Forms.Button btnAprocaoComercial;
         private System.Windows.Forms.Button btnClient;
@@ -760,13 +730,13 @@
         private System.Windows.Forms.Button btnNotificacao;
         private System.Windows.Forms.Button btnConfiguracao;
         private System.Windows.Forms.Panel panel11;
-        private System.Windows.Forms.Label labelEmailUser;
+        private System.Windows.Forms.Label lblEmail;
         private System.Windows.Forms.Label labelEmail;
-        private System.Windows.Forms.Label labelUsername;
+        private System.Windows.Forms.Label lblUsuario;
         private System.Windows.Forms.PictureBox pictureBoxUser;
         private System.Windows.Forms.Panel panelPrincipal;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnSaindo;
+        private System.Windows.Forms.Panel panelHome;
+        private System.Windows.Forms.Button btnHome;
     }
 }

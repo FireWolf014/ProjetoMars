@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ProjetoMars.formOrcamento
+namespace ProjetoMars.FormControleUsuario.CallCenter
 {
-    public partial class Orcamentocs : Form
+    public partial class UserControlDashboard : UserControl
     {
-        public Orcamentocs()
+        public UserControlDashboard()
         {
             InitializeComponent();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

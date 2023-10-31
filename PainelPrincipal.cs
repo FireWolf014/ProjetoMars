@@ -20,7 +20,13 @@ namespace ProjetoMars
         private Boolean showpanelEstoqueCustos = false;
         private Boolean showpanelFaturamento = false;
         private Boolean showpanelLivrosFiscais = false;
-        private Boolean showpanelOrcamento = false;
+
+        FormControleUsuario.PanelHome.UserControlHome HomePage = new FormControleUsuario.PanelHome.UserControlHome();
+        FormControleUsuario.CallCenter.UserControlOrcamento Orcamento = new FormControleUsuario.CallCenter.UserControlOrcamento();
+        FormControleUsuario.CallCenter.UserControlClientes Clientes = new FormControleUsuario.CallCenter.UserControlClientes();
+        FormControleUsuario.CallCenter.UserControlAprovacaoComercial AprovacaoComercial = new FormControleUsuario.CallCenter.UserControlAprovacaoComercial();
+        FormControleUsuario.CallCenter.UserControlDashboard Dashboard = new FormControleUsuario.CallCenter.UserControlDashboard();
+     
 
         private void tooglePanels()
         {
@@ -68,11 +74,15 @@ namespace ProjetoMars
         {
             InitializeComponent();
 
-            tooglePanels(); 
+            tooglePanels();
+            panelHome.Controls.Clear();
+            panelHome.Controls.Add(HomePage);
+            HomePage.Dock = DockStyle.Fill;
         }
         private void PainelPrincipal_Load(object sender, EventArgs e)
         {
-
+            lblUsuario.Text = Program.UsuarioLogado;
+            lblEmail.Text = Program.Email;
         }
 
         private void btnNotificacoes_Click(object sender, EventArgs e)
@@ -146,8 +156,11 @@ namespace ProjetoMars
 
         private void btnOrcamento_Click(object sender, EventArgs e)
         {
-                     
-            
+            panelHome.Controls.Clear();
+            panelHome.Controls.Add(Orcamento);
+            Orcamento.Dock = DockStyle.Fill;
+
+
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -187,6 +200,35 @@ namespace ProjetoMars
         }
 
         private void domainUpDown1_SelectedItemChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelUsername_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+             DialogResult resultado = MessageBox.Show("Deseja Fechar o Sistema", "Confirmação", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+
+            if (resultado == DialogResult.OK)
+            {
+                Application.Exit(); // Fecha o aplicativo
+            }
+            // Se o usuário clicar em "Cancelar", nada acontece.
+        }
+
+        private void btnHome_Click(object sender, EventArgs e)
+        {
+            tooglePanels();
+            panelHome.Controls.Clear();
+            panelHome.Controls.Add(HomePage);
+            HomePage.Dock = DockStyle.Fill;
+        }
+
+        private void panel11_Paint(object sender, PaintEventArgs e)
         {
 
         }

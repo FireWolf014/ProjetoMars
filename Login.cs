@@ -68,6 +68,9 @@ namespace ProjetoMars
                 string senhaUSR = dadosLogin["USR_PWD"].ToString();
                 if (senhaUSR == textBoxSenha.Text)
                 {
+                   Program.UsuarioLogado = dadosLogin["USR_NOME"].ToString();
+                   Program.Email = dadosLogin["USR_EMAIL"].ToString();
+
                     this.DialogResult = DialogResult.OK;
                 }
                 else
@@ -79,6 +82,17 @@ namespace ProjetoMars
             {
                 MessageBox.Show("Usuario nao encontrado");
             }
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            DialogResult resultado = MessageBox.Show("Deseja Fechar o Sistema", "Confirmação", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+
+            if (resultado == DialogResult.OK)
+            {
+                Application.Exit(); // Fecha o aplicativo
+            }
+            // Se o usuário clicar em "Cancelar", nada acontece.
         }
     }
 }
